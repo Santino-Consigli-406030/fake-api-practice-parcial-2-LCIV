@@ -27,103 +27,44 @@
   "bookings": [
     {
       "booking_id": 1,
-      "flight": {
-        "flight_id": 1,
-        "flight_number": "AA123",
-        "origin": "JFK",
-        "destination": "LAX",
-        "airline": {"airline_id": 1, "name": "American Airlines", "code": "AA"},
-        "schedule": {"schedule_id": 1, "departure_time": "2023-10-01T08:00:00", "arrival_time": "2023-10-01T11:00:00", "status": "ON_TIME"},
-        "crew_members": ["John Smith", "Jane Doe"],
-        "airplane": {
-          "airplane_id": 1,
-          "model": "Boeing 737",
-          "capacity": 150,
-          "seats": [
-            {"seat_id": 1, "isAvailable": false},
-            {"seat_id": 2, "isAvailable": true}
-          ]
-        }
-      },
+      "flight": {"flight_id": 1, "flight_number": "AA123"},
       "seat": {"seat_id": 1, "isAvailable": false},
-      "passenger": {"passenger_id": 1, "first_name": "John", "last_name": "Doe", "contact_details": "john.doe@example.com"},
-      "ticket": {"ticket_id": 1, "price": 200.0, "seat_class": "Economy", "status": "CONFIRMED"},
+      "passenger": {"passenger_id": 1, "first_name": "John", "last_name": "Doe"},
+      "ticket": {"ticket_id": 1, "price": 200.0, "seat_class": "Economy"},
       "status": "CONFIRMED"
     },
     {
       "booking_id": 2,
-      "flight": {
-        "flight_id": 2,
-        "flight_number": "BA456",
-        "origin": "LHR",
-        "destination": "JFK",
-        "airline": {"airline_id": 2, "name": "British Airways", "code": "BA"},
-        "schedule": {"schedule_id": 2, "departure_time": "2023-10-02T09:00:00", "arrival_time": "2023-10-02T12:00:00", "status": "DELAYED"},
-        "crew_members": ["Alice Johnson", "Bob Brown"],
-        "airplane": {
-          "airplane_id": 2,
-          "model": "Airbus A320",
-          "capacity": 180,
-          "seats": [
-            {"seat_id": 3, "isAvailable": false},
-            {"seat_id": 4, "isAvailable": true}
-          ]
-        }
-      },
+      "flight": {"flight_id": 2, "flight_number": "BA456"},
       "seat": {"seat_id": 3, "isAvailable": false},
-      "passenger": {"passenger_id": 2, "first_name": "Jane", "last_name": "Smith", "contact_details": "jane.smith@example.com"},
-      "ticket": {"ticket_id": 2, "price": 300.0, "seat_class": "Business", "status": "CONFIRMED"},
+      "passenger": {"passenger_id": 2, "first_name": "Jane", "last_name": "Smith"},
+      "ticket": {"ticket_id": 2, "price": 300.0, "seat_class": "Business"},
       "status": "CONFIRMED"
     },
     {
       "booking_id": 3,
-      "flight": {
-        "flight_id": 1,
-        "flight_number": "AA123",
-        "origin": "JFK",
-        "destination": "LAX",
-        "airline": {"airline_id": 1, "name": "American Airlines", "code": "AA"},
-        "schedule": {"schedule_id": 1, "departure_time": "2023-10-01T08:00:00", "arrival_time": "2023-10-01T11:00:00", "status": "ON_TIME"},
-        "crew_members": ["John Smith", "Jane Doe"],
-        "airplane": {
-          "airplane_id": 1,
-          "model": "Boeing 737",
-          "capacity": 150,
-          "seats": [
-            {"seat_id": 1, "isAvailable": false},
-            {"seat_id": 2, "isAvailable": true}
-          ]
-        }
-      },
-      "seat": {"seat_id": 2, "isAvailable": true},
-      "passenger": {"passenger_id": 3, "first_name": "Alice", "last_name": "Johnson", "contact_details": "alice.johnson@example.com"},
-      "ticket": {"ticket_id": 3, "price": 250.0, "seat_class": "Economy", "status": "PENDING"},
+      "flight": {"flight_id": 1, "flight_number": "AA123"},
+      "seat": {"seat_id": 2, "isAvailable": false},
+      "passenger": {"passenger_id": 3, "first_name": "Alice", "last_name": "Johnson"},
+      "ticket": {"ticket_id": 3, "price": 250.0, "seat_class": "Economy"},
       "status": "PENDING"
     }
   ],
   "passengers": [
-    {"passenger_id": 1, "first_name": "John", "last_name": "Doe", "contact_details": "john.doe@example.com"},
-    {"passenger_id": 2, "first_name": "Jane", "last_name": "Smith", "contact_details": "jane.smith@example.com"},
-    {"passenger_id": 3, "first_name": "Alice", "last_name": "Johnson", "contact_details": "alice.johnson@example.com"}
+    {"passenger_id": 1, "first_name": "John", "last_name": "Doe"},
+    {"passenger_id": 2, "first_name": "Jane", "last_name": "Smith"},
+    {"passenger_id": 3, "first_name": "Alice", "last_name": "Johnson"}
   ],
   "airplanes": [
     {
       "airplane_id": 1,
       "model": "Boeing 737",
-      "capacity": 150,
-      "seats": [
-        {"seat_id": 1, "isAvailable": false},
-        {"seat_id": 2, "isAvailable": true}
-      ]
+      "capacity": 150
     },
     {
       "airplane_id": 2,
       "model": "Airbus A320",
-      "capacity": 180,
-      "seats": [
-        {"seat_id": 3, "isAvailable": false},
-        {"seat_id": 4, "isAvailable": true}
-      ]
+      "capacity": 180
     }
   ],
   "flights": [
@@ -132,36 +73,20 @@
       "flight_number": "AA123",
       "origin": "JFK",
       "destination": "LAX",
-      "airline": {"airline_id": 1, "name": "American Airlines", "code": "AA"},
-      "schedule": {"schedule_id": 1, "departure_time": "2023-10-01T08:00:00", "arrival_time": "2023-10-01T11:00:00", "status": "ON_TIME"},
-      "crew_members": ["John Smith", "Jane Doe"],
-      "airplane": {
-        "airplane_id": 1,
-        "model": "Boeing 737",
-        "capacity": 150,
-        "seats": [
-          {"seat_id": 1, "isAvailable": false},
-          {"seat_id": 2, "isAvailable": true}
-        ]
-      }
+      "airline_id": 1,
+      "schedule_id": 1,
+      "crew_member_ids": [1, 2],
+      "airplane_id": 1
     },
     {
       "flight_id": 2,
       "flight_number": "BA456",
       "origin": "LHR",
       "destination": "JFK",
-      "airline": {"airline_id": 2, "name": "British Airways", "code": "BA"},
-      "schedule": {"schedule_id": 2, "departure_time": "2023-10-02T09:00:00", "arrival_time": "2023-10-02T12:00:00", "status": "DELAYED"},
-      "crew_members": ["Alice Johnson", "Bob Brown"],
-      "airplane": {
-        "airplane_id": 2,
-        "model": "Airbus A320",
-        "capacity": 180,
-        "seats": [
-          {"seat_id": 3, "isAvailable": false},
-          {"seat_id": 4, "isAvailable": true}
-        ]
-      }
+      "airline_id": 2,
+      "schedule_id": 2,
+      "crew_member_ids": [3, 4],
+      "airplane_id": 2
     }
   ]
 }
