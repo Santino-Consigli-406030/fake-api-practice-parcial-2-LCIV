@@ -55,18 +55,7 @@
     {"passenger_id": 2, "first_name": "Jane", "last_name": "Smith"},
     {"passenger_id": 3, "first_name": "Alice", "last_name": "Johnson"}
   ],
-  "airplanes": [
-    {
-      "airplane_id": 1,
-      "model": "Boeing 737",
-      "capacity": 150
-    },
-    {
-      "airplane_id": 2,
-      "model": "Airbus A320",
-      "capacity": 180
-    }
-  ],
+
   "flights": [
     {
       "flight_id": 1,
@@ -76,7 +65,7 @@
       "airline_id": 1,
       "schedule_id": 1,
       "crew_member_ids": [1, 2],
-      "airplane_id": 1
+      "airplane": LAPA
     },
     {
       "flight_id": 2,
@@ -86,7 +75,7 @@
       "airline_id": 2,
       "schedule_id": 2,
       "crew_member_ids": [3, 4],
-      "airplane_id": 2
+      "airplane": AEROLINEAS
     }
   ]
 }
