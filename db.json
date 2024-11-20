@@ -1,3 +1,4 @@
+
 {
   "tickets": [
     {"ticket_id": 1, "price": 200.0, "seat_class": "Economy", "status": "CONFIRMED"},
@@ -55,7 +56,13 @@
         "CAPITAN CARLOS",
         "COPILOTO GONZALO"
       ],
-      "airplane": "LAPA"
+      "airplane": {
+        "model": "LAPA",
+        "seats": [
+          {"seat_id": 1, "isAvailable": false},
+          {"seat_id": 2, "isAvailable": false}
+        ]
+      }
     },
     {
       "flight_id": 2,
@@ -68,7 +75,13 @@
         "CAPITAN JOSEFINA",
         "COPILOTO CLAUDIA"
       ],
-      "airplane": "AEROLINEAS"
+      "airplane": {
+        "model": "AEROLINEAS",
+        "seats": [
+          {"seat_id": 3, "isAvailable": false},
+          {"seat_id": 4, "isAvailable": true}
+        ]
+      }
     }
   ]
 }
