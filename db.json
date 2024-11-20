@@ -1,0 +1,100 @@
+{
+  "tickets": [
+    {"ticket_id": 1, "price": 200.0, "seat_class": "Economy", "status": "CONFIRMED"},
+    {"ticket_id": 2, "price": 300.0, "seat_class": "Business", "status": "CONFIRMED"},
+    {"ticket_id": 3, "price": 250.0, "seat_class": "Economy", "status": "PENDING"},
+    {"ticket_id": 4, "price": 400.0, "seat_class": "First", "status": "CANCELLED"},
+    {"ticket_id": 5, "price": 350.0, "seat_class": "Business", "status": "CONFIRMED"}
+  ],
+  "schedules": [
+    {"schedule_id": 1, "departure_time": "2023-10-01T08:00:00", "arrival_time": "2023-10-01T11:00:00", "status": "ON_TIME"},
+    {"schedule_id": 2, "departure_time": "2023-10-02T09:00:00", "arrival_time": "2023-10-02T12:00:00", "status": "DELAYED"},
+    {"schedule_id": 3, "departure_time": "2023-10-03T10:00:00", "arrival_time": "2023-10-03T13:00:00", "status": "ON_TIME"},
+    {"schedule_id": 4, "departure_time": "2023-10-04T11:00:00", "arrival_time": "2023-10-04T14:00:00", "status": "CANCELLED"}
+  ],
+  "crew_members": [
+    {"crew_member_id": 1, "name": "John Smith", "role": "Pilot", "contact_details": "john.smith@example.com"},
+    {"crew_member_id": 2, "name": "Jane Doe", "role": "Flight Attendant", "contact_details": "jane.doe@example.com"},
+    {"crew_member_id": 3, "name": "Alice Johnson", "role": "Pilot", "contact_details": "alice.johnson@example.com"},
+    {"crew_member_id": 4, "name": "Bob Brown", "role": "Flight Attendant", "contact_details": "bob.brown@example.com"},
+    {"crew_member_id": 5, "name": "Michael White", "role": "Co-Pilot", "contact_details": "michael.white@example.com"}
+  ],
+  "airlines": [
+    {"airline_id": 1, "name": "American Airlines", "code": "AA"},
+    {"airline_id": 2, "name": "British Airways", "code": "BA"},
+    {"airline_id": 3, "name": "Delta Airlines", "code": "DL"}
+  ],
+  "bookings": [
+    {
+      "booking_id": 1,
+      "flight": {"flight_id": 1, "flight_number": "AA123"},
+      "seat": {"seat_id": 1, "isAvailable": false},
+      "passenger": {"passenger_id": 1, "first_name": "John", "last_name": "Doe"},
+      "ticket": {"ticket_id": 1, "price": 200.0, "seat_class": "Economy", "status": "CONFIRMED"},
+      "status": "CONFIRMED"
+    },
+    {
+      "booking_id": 2,
+      "flight": {"flight_id": 2, "flight_number": "BA456"},
+      "seat": {"seat_id": 3, "isAvailable": false},
+      "passenger": {"passenger_id": 2, "first_name": "Jane", "last_name": "Smith"},
+      "ticket": {"ticket_id": 2, "price": 300.0, "seat_class": "Business", "status": "CONFIRMED"},
+      "status": "CONFIRMED"
+    },
+    {
+      "booking_id": 3,
+      "flight": {"flight_id": 1, "flight_number": "AA123"},
+      "seat": {"seat_id": 2, "isAvailable": false},
+      "passenger": {"passenger_id": 3, "first_name": "Alice", "last_name": "Johnson"},
+      "ticket": {"ticket_id": 3, "price": 250.0, "seat_class": "Economy", "status": "PENDING"},
+      "status": "PENDING"
+    }
+  ],
+  "passengers": [
+    {"passenger_id": 1, "first_name": "John", "last_name": "Doe", "contact_details": "john.doe@example.com"},
+    {"passenger_id": 2, "first_name": "Jane", "last_name": "Smith", "contact_details": "jane.smith@example.com"},
+    {"passenger_id": 3, "first_name": "Alice", "last_name": "Johnson", "contact_details": "alice.johnson@example.com"}
+  ],
+  "airplanes": [
+    {
+      "airplane_id": 1,
+      "model": "Boeing 737",
+      "capacity": 150,
+      "seats": [
+        {"seat_id": 1, "isAvailable": false},
+        {"seat_id": 2, "isAvailable": true}
+      ]
+    },
+    {
+      "airplane_id": 2,
+      "model": "Airbus A320",
+      "capacity": 180,
+      "seats": [
+        {"seat_id": 3, "isAvailable": false},
+        {"seat_id": 4, "isAvailable": true}
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "flight_id": 1,
+      "flight_number": "AA123",
+      "origin": "JFK",
+      "destination": "LAX",
+      "airline": {"airline_id": 1, "name": "American Airlines", "code": "AA"},
+      "schedule": {"schedule_id": 1, "departure_time": "2023-10-01T08:00:00", "arrival_time": "2023-10-01T11:00:00", "status": "ON_TIME"},
+      "crew_members": [{"crew_member_id": 1}, {"crew_member_id": 2}],
+      "airplane": {"airplane_id": 1}
+    },
+    {
+      "flight_id": 2,
+      "flight_number": "BA456",
+      "origin": "LHR",
+      "destination": "JFK",
+      "airline": {"airline_id": 2, "name": "British Airways", "code": "BA"},
+      "schedule": {"schedule_id": 2, "departure_time": "2023-10-02T09:00:00", "arrival_time": "2023-10-02T12:00:00", "status": "DELAYED"},
+      "crew_members": [{"crew_member_id": 3}, {"crew_member_id": 4}],
+      "airplane": {"airplane_id": 2}
+    }
+  ]
+}
