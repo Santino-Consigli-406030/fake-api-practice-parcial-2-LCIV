@@ -12,11 +12,7 @@
     {"schedule_id": 3, "departure_time": "2023-10-03T10:00:00", "arrival_time": "2023-10-03T13:00:00", "status": "ON_TIME"},
     {"schedule_id": 4, "departure_time": "2023-10-04T11:00:00", "arrival_time": "2023-10-04T14:00:00", "status": "CANCELLED"}
   ],
-  "airlines": [
-    {"airline_id": 1, "name": "American Airlines", "code": "AA"},
-    {"airline_id": 2, "name": "British Airways", "code": "BA"},
-    {"airline_id": 3, "name": "Delta Airlines", "code": "DL"}
-  ],
+
   "bookings": [
     {
       "booking_id": 1,
@@ -49,14 +45,14 @@
       "flight_number": "AA123",
       "origin": "JFK",
       "destination": "LAX",
-      "airline_id": 1,
+      "airline": AMERICAN AIRLINES,
       "schedule_id": 1,
       "crew_members": [
         "CAPITAN CARLOS",
         "COPILOTO GONZALO"
       ],
       "airplane": {
-        "model": "LAPA",
+        "model": "Boeing 720",
         "seats": [
           {"seat_id": 1, "isAvailable": false, "version": 1},
           {"seat_id": 2, "isAvailable": false, "version": 1},
@@ -72,14 +68,14 @@
       "flight_number": "BA456",
       "origin": "LHR",
       "destination": "JFK",
-      "airline_id": 2,
+      "airline": AEROLINEAS,
       "schedule_id": 2,
       "crew_members": [
         "CAPITAN JOSEFINA",
         "COPILOTO CLAUDIA"
       ],
       "airplane": {
-        "model": "AEROLINEAS",
+        "model": "Boeing 707",
         "seats": [
           {"seat_id": 3, "isAvailable": false, "version": 1},
           {"seat_id": 4, "isAvailable": true, "version": 1},
