@@ -59,7 +59,12 @@
         "model": "LAPA",
         "seats": [
           {"seat_id": 1, "isAvailable": false, "version": 1},
-          {"seat_id": 2, "isAvailable": false, "version": 1}
+          {"seat_id": 2, "isAvailable": false, "version": 1},
+          {"seat_id": 10, "isAvailable": true, "version": 1}
+          {"seat_id": 11, "isAvailable": true, "version": 1}
+          {"seat_id": 12, "isAvailable": true, "version": 1}
+          {"seat_id": 13, "isAvailable": true, "version": 1}
+          {"seat_id": 14, "isAvailable": true, "version": 1}
         ]
       }
     },
@@ -79,6 +84,11 @@
         "seats": [
           {"seat_id": 3, "isAvailable": false, "version": 1},
           {"seat_id": 4, "isAvailable": true, "version": 1}
+          {"seat_id": 5, "isAvailable": true, "version": 1}
+          {"seat_id": 6, "isAvailable": true, "version": 1}
+          {"seat_id": 7, "isAvailable": true, "version": 1}
+          {"seat_id": 8, "isAvailable": true, "version": 1}
+          {"seat_id": 9, "isAvailable": true, "version": 1}
         ]
       }
     }
