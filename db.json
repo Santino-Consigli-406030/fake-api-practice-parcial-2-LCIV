@@ -15,7 +15,7 @@
 
   "bookings": [
     {
-      "booking_id": 1,
+      "id": 1,
       "flight": {"flight_id": 1, "flight_number": "AA123"},
       "seat": {"seat_id": 1, "isAvailable": false},
       "passenger": "MARIA",
@@ -23,7 +23,7 @@
       "status": "CONFIRMED"
     },
     {
-      "booking_id": 2,
+      "id": 2,
       "flight": {"flight_id": 2, "flight_number": "BA456"},
       "seat": {"seat_id": 3, "isAvailable": false},
       "passenger": "JUAN",
@@ -31,7 +31,7 @@
       "status": "CONFIRMED"
     },
     {
-      "booking_id": 3,
+      "id": 3,
       "flight": {"flight_id": 1, "flight_number": "AA123"},
       "seat": {"seat_id": 2, "isAvailable": false},
       "passenger": "PEDRO",
@@ -41,7 +41,7 @@
   ],
   "flights": [
     {
-      "flight_id": 1,
+      "id": 1,
       "flight_number": "AA123",
       "origin": "JFK",
       "destination": "LAX",
@@ -64,7 +64,7 @@
       }
     },
     {
-      "flight_id": 2,
+      "id": 2,
       "flight_number": "BA456",
       "origin": "LHR",
       "destination": "JFK",
