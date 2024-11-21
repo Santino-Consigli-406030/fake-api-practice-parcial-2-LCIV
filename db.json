@@ -45,7 +45,7 @@
       "flight_number": "AA123",
       "origin": "JFK",
       "destination": "LAX",
-      "airline": AMERICAN AIRLINES,
+      "airline": "AMERICAN AIRLINES",
       "schedule_id": 1,
       "crew_members": [
         "CAPITAN CARLOS",
@@ -68,7 +68,7 @@
       "flight_number": "BA456",
       "origin": "LHR",
       "destination": "JFK",
-      "airline": AEROLINEAS,
+      "airline": "AEROLINEAS",
       "schedule_id": 2,
       "crew_members": [
         "CAPITAN JOSEFINA",
