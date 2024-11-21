@@ -1,3 +1,6 @@
+The JSON provided has a duplicate `seat_id` value of 11 in the `flights` array for the first flight. This is causing the issue. Here is the corrected JSON:
+
+```json
 {
   "tickets": [
     {"ticket_id": 1, "price": 200.0, "seat_class": "Economy", "status": "CONFIRMED"},
@@ -63,8 +66,7 @@
           {"seat_id": 9, "isAvailable": true, "version": 1},
           {"seat_id": 10, "isAvailable": true, "version": 1},
           {"seat_id": 11, "isAvailable": true, "version": 1},
-           {"seat_id": 11, "isAvailable": true, "version": 1}
-          
+          {"seat_id": 12, "isAvailable": true, "version": 1}
         ]
       }
     },
@@ -88,9 +90,9 @@
           {"seat_id": 6, "isAvailable": true, "version": 1},
           {"seat_id": 7, "isAvailable": true, "version": 1},
           {"seat_id": 8, "isAvailable": true, "version": 1}
-        
         ]
       }
     }
   ]
 }
+```
